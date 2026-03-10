@@ -5,9 +5,17 @@ import { useState } from "react";
 
 const socials = [
   { icon: Github, href: "https://github.com/pedrohalb", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/pedro-henrique-alves-barbosa-3056aa26a/", label: "LinkedIn" },
-  { icon: Instagram, href: "https://www.instagram.com/phh_barbosa/", label: "Instagram" },
-  { icon: Mail, href: "mailto:pedro.barbosa@sou.unifal-mg.edu.br", label: "Email" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/pedro-henrique-alves-barbosa-3056aa26a/",
+    label: "LinkedIn",
+  },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/pedroohalb/",
+    label: "Instagram",
+  },
+  { icon: Mail, href: "mailto:pedroohalb@gmail.com", label: "Email" },
 ];
 
 const HeroSection = () => {
@@ -25,9 +33,8 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="font-mono text-primary mb-4 text-sm md:text-base"
-          >
-          </motion.p>
+            className="font-mono text-primary mb-4 text-base md:text-lg"
+          ></motion.p>
 
           <motion.h1
             initial={{ opacity: 0 }}
@@ -47,7 +54,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: nameComplete ? 1 : 0 }}
             transition={{ duration: 0.3 }}
-            className="font-display text-xl md:text-2xl lg:text-3xl font-medium mb-6"
+            className="font-display text-2xl md:text-3xl lg:text-4xl font-medium mb-6"
           >
             <span className="text-gradient">
               {nameComplete && (
@@ -63,23 +70,36 @@ const HeroSection = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: roleComplete ? 1 : 0, y: roleComplete ? 0 : 20 }}
+            animate={{
+              opacity: roleComplete ? 1 : 0,
+              y: roleComplete ? 0 : 20,
+            }}
             transition={{ duration: 0.5 }}
-            className="text-muted-foreground text-lg max-w-lg mx-auto mb-8"
+            className="text-muted-foreground text-xl max-w-xl mx-auto mb-8"
           >
-            Desenvolvendo e sustentando aplicações críticas com foco em performance, confiabilidade e evolução contínua.
+            Desenvolvendo e sustentando aplicações críticas com foco em
+            performance, confiabilidade e evolução contínua.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: roleComplete ? 1 : 0, y: roleComplete ? 0 : 20 }}
+            animate={{
+              opacity: roleComplete ? 1 : 0,
+              y: roleComplete ? 0 : 20,
+            }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex items-center justify-center gap-4 mb-10"
           >
-            <a href="#projetos" className="px-6 py-3 bg-primary text-primary-foreground font-mono text-sm font-semibold rounded-md hover:opacity-90 transition-opacity glow-primary">
+            <a
+              href="#projetos"
+              className="px-8 py-4 bg-primary text-primary-foreground font-mono text-base font-semibold rounded-md hover:opacity-90 transition-opacity glow-primary"
+            >
               Ver Projetos
             </a>
-            <a href="#contato" className="px-6 py-3 border border-primary/50 text-primary font-mono text-sm font-semibold rounded-md hover:bg-primary/10 transition-colors">
+            <a
+              href="#contato"
+              className="px-8 py-4 border border-primary/50 text-primary font-mono text-base font-semibold rounded-md hover:bg-primary/10 transition-colors"
+            >
               Contato
             </a>
           </motion.div>
@@ -93,8 +113,15 @@ const HeroSection = () => {
             <div className="w-8 h-px bg-border" />
             <div className="flex items-center gap-5 px-4">
               {socials.map((s) => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label={s.label}>
-                  <s.icon size={22} />
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={s.label}
+                >
+                  <s.icon size={26} />
                 </a>
               ))}
             </div>
