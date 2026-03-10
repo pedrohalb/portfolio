@@ -27,7 +27,6 @@ const HeroSection = () => {
             transition={{ delay: 0.2 }}
             className="font-mono text-primary mb-4 text-sm md:text-base"
           >
-            👋 Olá! eu sou
           </motion.p>
 
           <motion.h1
@@ -50,7 +49,6 @@ const HeroSection = () => {
             transition={{ duration: 0.3 }}
             className="font-display text-xl md:text-2xl lg:text-3xl font-medium mb-6"
           >
-            e sou{" "}
             <span className="text-gradient">
               {nameComplete && (
                 <TypewriterText
@@ -69,8 +67,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="text-muted-foreground text-lg max-w-lg mx-auto mb-8"
           >
-            Estudante de Ciência da Computação na UNIFAL-MG, apaixonado por 
-            desenvolvimento e sempre em busca de evolução.
+            Desenvolvendo e sustentando aplicações críticas com foco em performance, confiabilidade e evolução contínua.
           </motion.p>
 
           <motion.div

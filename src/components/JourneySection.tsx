@@ -9,24 +9,30 @@ const timeline = [
     description:
       "Iniciei o curso de Bacharelado em Ciência da Computação pela Universidade Federal de Alfenas (UNIFAL-MG).",
     icon: GraduationCap,
-    image: "/placeholder.svg",
+    image: "/unifal.jpg",
+    imageFit: "cover",
+    imageBg: "bg-secondary/50",
   },
   {
-    year: "2024",
-    title: "Estágio — Grupo Glorium",
+    year: "2025",
+    title: "Estágio em Desenvolvimento — Grupo Glorium",
     description:
-      "Estagiei por 6 meses no Grupo Glorium, onde pude aplicar conhecimentos de desenvolvimento de software em projetos reais e aprimorar habilidades técnicas em um ambiente profissional.",
+      "Desenvolvimento de plataforma web com TypeScript, Node.js, React e MySQL. Manutenção de sistemas em produção integrados ao WhatsApp e boletos bancários, além de administração de servidores Linux com Docker.",
     icon: Building2,
-    image: "/placeholder.svg",
+    image: "/images.png",
+    imageFit: "contain",
+    imageBg: "bg-[#1a1a1a]",
   },
   {
-    year: "2024",
-    title: "Desenvolvedor — Grupo Awtech",
+    year: "2025",
+    title: "Desenvolvedor FullStack — Grupo Awtech",
     description:
-      "Comecei a trabalhar no Grupo Awtech há 8 meses, atuando como desenvolvedor e contribuindo em projetos de tecnologia com foco em qualidade e inovação.",
+      "Desenvolvimento e suporte de aplicações SaaS críticas com NestJS, PHP, React e Vue.js. Investigação de bugs em produção, otimização de queries MySQL/MongoDB e gerenciamento de filas com RabbitMQ.",
     icon: Briefcase,
     current: true,
-    image: "/placeholder.svg",
+    image: "/awtech.jpeg",
+    imageFit: "contain",
+    imageBg: "bg-[#003166]",
   },
 ];
 
@@ -68,24 +74,25 @@ const JourneySection = () => {
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.2 }}
-                className={`relative flex items-start mb-12 last:mb-0 ${
-                  isLeft
-                    ? "md:flex-row"
-                    : "md:flex-row-reverse"
-                } flex-row`}
+                className={`relative flex items-start mb-12 last:mb-0 ${isLeft
+                  ? "md:flex-row"
+                  : "md:flex-row-reverse"
+                  } flex-row`}
               >
                 {/* Content card */}
                 <div
-                  className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
-                    isLeft ? "md:pr-0 md:text-right" : "md:pl-0 md:text-left"
-                  }`}
+                  className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? "md:pr-0 md:text-right" : "md:pl-0 md:text-left"
+                    }`}
                 >
                   <div className="glass-card overflow-hidden hover:border-primary/30 transition-all duration-300 hover:glow-primary">
-                    <div className="w-full aspect-[2.5/1] bg-secondary/50 border-b border-border/50 flex items-center justify-center overflow-hidden">
+                    <div className={`w-full aspect-[2.5/1] border-b border-border/50 flex items-center justify-center overflow-hidden ${item.imageBg}`}>
                       <img
                         src={item.image}
                         alt={`Preview de ${item.title}`}
-                        className="w-full h-full object-cover opacity-60 hover:opacity-80 hover:scale-105 transition-all duration-500"
+                        className={`transition-all duration-500 hover:scale-105 opacity-80 hover:opacity-100 ${item.imageFit === "contain"
+                          ? "h-full w-full object-contain p-4"
+                          : "w-full h-full object-cover"
+                          }`}
                       />
                     </div>
                     <div className="p-6">
