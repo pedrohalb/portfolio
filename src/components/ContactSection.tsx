@@ -3,10 +3,30 @@ import { useRef } from "react";
 import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 
 const contacts = [
-  { icon: Github, label: "GitHub", value: "@pedrohalb", href: "https://github.com/pedrohalb" },
-  { icon: Linkedin, label: "LinkedIn", value: "/in/pedro-henrique", href: "https://www.linkedin.com/in/pedro-henrique-alves-barbosa-3056aa26a/" },
-  { icon: Instagram, label: "Instagram", value: "@phh_barbosa", href: "https://www.instagram.com/phh_barbosa/" },
-  { icon: Mail, label: "Email", value: "pedro.barbosa@sou.unifal-mg.edu.br", href: "mailto:pedro.barbosa@sou.unifal-mg.edu.br" },
+  {
+    icon: Github,
+    label: "GitHub",
+    value: "@pedrohalb",
+    href: "https://github.com/pedrohalb",
+  },
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "/in/pedro-henrique",
+    href: "https://www.linkedin.com/in/pedro-henrique-alves-barbosa-3056aa26a/",
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    value: "@pedroohalb",
+    href: "https://www.instagram.com/pedroohalb/",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "pedroohalb@gmail.com",
+    href: "mailto:pedroohalb@gmail.com",
+  },
 ];
 
 const ContactSection = () => {
@@ -26,7 +46,8 @@ const ContactSection = () => {
             Vamos conversar?
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-12">
-            Estou sempre aberto a novas oportunidades e projetos interessantes. Sinta-se à vontade para entrar em contato!
+            Estou sempre aberto a novas oportunidades e projetos interessantes.
+            Sinta-se à vontade para entrar em contato!
           </p>
         </motion.div>
 
@@ -44,7 +65,9 @@ const ContactSection = () => {
             >
               <c.icon size={20} className="text-primary shrink-0" />
               <div className="text-left">
-                <p className="font-mono text-xs text-muted-foreground">{c.label}</p>
+                <p className="font-mono text-xs text-muted-foreground">
+                  {c.label}
+                </p>
                 <p className="text-sm text-foreground group-hover:text-primary transition-colors truncate">
                   {c.value}
                 </p>

@@ -1,4 +1,11 @@
-import { Github, Linkedin, Instagram, MessageCircle, Mail, ArrowUp } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  MessageCircle,
+  Mail,
+  ArrowUp,
+} from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
@@ -10,10 +17,17 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/pedrohalb", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/pedrohalb", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: MessageCircle, href: "#", label: "Discord" },
-    { icon: Mail, href: "mailto:contato@pedrohenrique.dev", label: "Email" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/pedro-henrique-alves-barbosa-3056aa26a/",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/pedroohalb/",
+      label: "Instagram",
+    },
+    { icon: Mail, href: "mailto:pedroohalb@gmail.com", label: "Email" },
   ];
 
   const scrollToTop = () => {
@@ -26,15 +40,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & Description */}
           <div>
-            <p className="font-mono text-primary text-lg font-bold mb-3">&lt;PH /&gt;</p>
+            <p className="font-mono text-primary text-lg font-bold mb-3">
+              &lt;PH /&gt;
+            </p>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Desenvolvedor Full Stack apaixonado por criar soluções digitais que fazem a diferença.
+              Desenvolvedor Full Stack apaixonado por criar soluções digitais
+              que fazem a diferença.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-widest text-primary mb-4">Links Rápidos</h4>
+            <h4 className="font-mono text-xs uppercase tracking-widest text-primary mb-4">
+              Links Rápidos
+            </h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -51,7 +70,9 @@ const Footer = () => {
 
           {/* Social */}
           <div>
-            <h4 className="font-mono text-xs uppercase tracking-widest text-primary mb-4">Redes Sociais</h4>
+            <h4 className="font-mono text-xs uppercase tracking-widest text-primary mb-4">
+              Redes Sociais
+            </h4>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a
@@ -74,7 +95,7 @@ const Footer = () => {
       <div className="border-t border-border/50 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <p className="text-xs text-muted-foreground">
-            © 2026 Pedro Henrique. Feito com <span className="text-accent">♥</span> e muito café.
+            © 2026 Pedro Henrique.
           </p>
           <button
             onClick={scrollToTop}
