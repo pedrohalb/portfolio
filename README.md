@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 💻 PEDRO HENRIQUE – Software Developer
 
-## Project info
+[![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.34.2-black?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+[![Lucide React](https://img.shields.io/badge/Lucide-0.462.0-0ea5e9?style=for-the-badge&logo=lucide)](https://lucide.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-3178c6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+Acesse o site: [https://portfolio-six-iota-tu03rl1l2b.vercel.app/](https://portfolio-six-iota-tu03rl1l2b.vercel.app/)
 
-There are several ways of editing your application.
+![Preview Portfolio](public/foto.png)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🧠 Sobre o Projeto
 
-Changes made via Lovable will be committed automatically to this repo.
+Este é o meu portfólio pessoal, uma aplicação web moderna e responsiva desenvolvida para apresentar meus projetos, habilidades e trajetória profissional como desenvolvedor de software. O site oferece:
 
-**Use your preferred IDE**
+- 🎯 **Trajetória Profissional**: Detalhes sobre minha jornada e evolução na área.
+- 🖼️ **Showcase de Projetos**: Galeria interativa dos principais projetos com links diretos.
+- 💡 **Tecnologias & Skills**: Seção dedicada às ferramentas e linguagens que domino.
+- 📱 **Interface Premium**: Design responsivo com animações fluidas e background interativo de partículas.
+- 📢 **Contato**: Links integrados para redes sociais e e-mail.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ⚙️ Tecnologias Utilizadas
 
-Follow these steps:
+### 🎨 Front-end (React + Vite)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Biblioteca         | Finalidade                                                      |
+| :----------------- | :-------------------------------------------------------------- |
+| **React**          | Framework principal para construção da interface                |
+| **Vite**           | Ferramenta de build e servidor de desenvolvimento ultra-rápido  |
+| **Tailwind CSS**   | Estilização moderna baseada em utilitários                      |
+| **Framer Motion**  | Animações suaves, transições e efeitos de scroll                |
+| **Lucide React**   | Pack de ícones consistente e leve                               |
+| **Shadcn UI**      | Componentes de interface acessíveis e altamente customizáveis   |
+| **TanStack Query** | Gerenciamento de estado, cache e requisições assíncronas        |
+| **TypeScript**     | Superset JavaScript para tipagem estática e segurança de código |
+| **Vitest**         | Framework de testes para garantir a qualidade do código         |
+| **Recharts**       | Biblioteca de gráficos interativos (se aplicável ao portfólio)  |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## ▶️ Como Executar
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Pré-requisitos
+
+- Node.js instalado
+- NPM ou Bun
+
+### Passos para execução
+
+```bash
+# 1. Instale as dependências
+npm install
+
+# 2. Rode o projeto localmente
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+O projeto estará disponível em `http://localhost:8080` (ou na porta configurada pelo Vite).
