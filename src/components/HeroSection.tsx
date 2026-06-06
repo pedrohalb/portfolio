@@ -17,7 +17,7 @@ const socials = [
     label: "Instagram",
   },
   { icon: Mail, href: "mailto:pedroohalb@gmail.com", label: "Email" },
-];
+]; 
 
 const HeroSection = () => {
   const [nameComplete, setNameComplete] = useState(false);
