@@ -156,7 +156,7 @@ const HeroSection = () => {
 
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 1, scale: 1.09 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           className="relative w-full h-[450px] lg:h-[620px]"
         >
