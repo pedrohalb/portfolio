@@ -40,15 +40,14 @@ const AboutSection = () => {
             <div className="glass-card p-5 rounded-tl-none max-w-xl">
               <p className="text-secondary-foreground leading-relaxed mb-4">
                 Sou <span className="text-primary font-semibold">Pedro Henrique Alves Barbosa</span>,
-                graduando em <span className="text-foreground font-medium">Ciência da Computação</span> pela
-                Universidade Federal de Alfenas, com conclusão prevista para o primeiro semestre de 2026.
-                Possuo <span className="text-primary font-semibold">mais de dois anos de experiência em programação</span> e
-                <span className="text-primary font-semibold"> mais de um ano de atuação profissional</span> como desenvolvedor full stack.
+                tenho bacharelado em <span className="text-foreground font-medium">Ciência da Computação</span> pela
+                Universidade Federal de Alfenas.
+                Possuo <span className="text-primary font-semibold"> dois anos de atuação profissional</span> como desenvolvedor full stack.
               </p>
 
               <p className="text-muted-foreground leading-relaxed mb-4">
                 Atualmente atuo no <span className="text-foreground font-medium">Grupo Awtech</span>,
-                trabalhando com <span className="text-foreground font-medium">Node.js, TypeScript, NestJS, React, PHP e Vue.js</span> no desenvolvimento e manutenção de aplicações críticas de produção. No dia a dia investigo bugs,
+                trabalhando com <span className="text-foreground font-medium">Node.js, TypeScript, NestJS, React, PHP, Vue.js e React Native</span> no desenvolvimento e manutenção de aplicações críticas de produção. No dia a dia investigo bugs,
                 realizo análises de causa-raiz, otimizo queries em
                 <span className="text-foreground font-medium"> MySQL e MongoDB</span> e gerencio filas com
                 <span className="text-foreground font-medium"> RabbitMQ</span> em arquiteturas orientadas a eventos
