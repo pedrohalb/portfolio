@@ -4,6 +4,24 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Nutrigo",
+    description:
+      "Aplicativo mobile de nutrição com IA integrada. Pipeline de geração de tarefas personalizadas usando BullMQ, Redis e API de IA, com backend Node.js/Express e frontend React Native.",
+    tags: ["React Native", "Node.js", "TypeScript", "BullMQ", "Redis", "IA"],
+    github: "https://github.com/pedrohalb/nutrigo",
+    emoji: "🥗",
+    image: "/nutrigo.png",
+  },
+  {
+    title: "Bela Pedra",
+    description:
+      "Interface web do sistema de gestão para marmoraria. Dashboard com KPIs, controle de clientes, materiais, estoque e pedidos com painel visual completo e autenticação JWT.",
+    tags: ["React", "TypeScript", "shadcn/ui", "REST API"],
+    github: "https://github.com/pedrohalb/bela-pedra-front",
+    emoji: "🪨",
+    image: "/belapedra.png",
+  },
+  {
     title: "Hotel Management Application",
     description:
       "Sistema de gerenciamento de hotel desenvolvido em Java com foco em arquitetura limpa e boas práticas de POO.",
