@@ -20,6 +20,7 @@ const projects = [
     github: "https://github.com/pedrohalb/bela-pedra-front",
     emoji: "🪨",
     image: "/belapedra.png",
+    live: "https://app.marmorariabelapedra.tech/login"
   },
   {
     title: "Hotel Management Application",
